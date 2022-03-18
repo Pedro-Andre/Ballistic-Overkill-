@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ballistic Overkill - copia</title>
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!--ANIMATIONS CSS-->
+    <div class="preloader"></div>
+    <!--NAVBARS-->
+    <header>
+        <div class="side-bar">
+            <div class="logo">
+                <a href="https://store.steampowered.com/app/296300/Ballistic_Overkill/" target="_blank">
+                    <img src="./images/logo.png" width="55px">
+                </a>
+            </div>
+
+            <div class="socials">
+                <div class="steam">
+                    <a href="https://store.steampowered.com/app/296300/Ballistic_Overkill/" target="_blank">
+                        <img src="./images/steamW.svg" alt="">
+                    </a>
+                </div>
+                <div class="aquiris">
+                    <a href="https://www.aquiris.com.br/" target="_blank">
+                        <img src="./images/aquirisW.svg" alt="">
+                    </a>
+                </div>
+                <div class="twitter">
+                    <a href="https://twitter.com/AquirisGS" target="_blank">
+                        <img src="./images/twitterW.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="scroll-btn" onclick="listshow()">
+                <ul id="side-list" class="sideList">
+                    <li>
+                        <a href="./classes/berserker.html">
+                            <div class="mask">
+                                <img src="./images/Avatar/avatarFurioso.jpg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./classes/vanguard.html">
+                            <div class="mask">
+                                <img src="./images/Avatar/avatarVanguarda.jpg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./classes/wraith.html">
+                            <div class="mask">
+                                <img src="./images/Avatar/avatarEspectro.jpg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./classes/shadow.html">
+                            <div class="mask">
+                                <img src="./images/Avatar/avatarSombra.jpg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./classes/grenadier.html">
+                            <div class="mask">
+                                <img src="./images/Avatar/avatarGranadeiro.jpg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./classes/tank.html">
+                            <div class="mask">
+                                <img src="./images/Avatar/avatarTank.jpg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./classes/marksman.html">
+                            <div class="mask">
+                                <img src="./images/Avatar/avatarAtirador.jpg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <p>
+                    +
+                </p>
+            </div>
+        </div>
+
+        <div class="nav-bar">
+            <nav class="navBar">
+                <a href="https://store.steampowered.com/app/296300/Ballistic_Overkill/" target="_blank">Home</a>
+                <a href="https://store.steampowered.com/app/296300/Ballistic_Overkill/" target="_blank">More</a>
+                <a href="https://store.steampowered.com/app/296300/Ballistic_Overkill/" target="_blank">About</a>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <!--HOME-->
+    <div class="home-container">
+        <div class="big-logo">
+            <img src="./images/biglogo.png" width="100%" alt="">
+        </div>
+
+        <a href="./classes/berserker.html" class="view-classes">View Classes</a>
+    </div>
+
+    <!--SIDE LIST (SHOW / HIDE)-->
+    <script>
+        function listshow() {
+            let sideNav = document.getElementById("side-list");
+
+            if (sideNav.style.display === "block") {
+                sideNav.style.display = "none";
+            } else {
+                sideNav.style.display = "block";
+            }
+        }
+    </script>
+
+    <!--MOBILE LIST (SHOW / HIDE)-->
+    <script>
+        function mobileshow() {
+            let mobNav = document.getElementById("mobileNav");
+
+            if (mobNav.style.display === "block") {
+                mobNav.style.display = "none";
+            } else {
+                mobNav.style.display = "block";
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>

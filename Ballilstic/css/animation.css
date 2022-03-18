@@ -1,0 +1,62 @@
+.transition {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    animation: animation 1s ease-out;
+    transform-origin: right;    
+    pointer-events: none;
+    z-index: 999;
+}
+
+@keyframes animation {
+    from {
+        opacity: 1;
+        background: #000000;
+        transform: translateX(50%);
+    }
+
+    to {
+        opacity: 0;
+        background: #000000;
+        transform: translateX(-100%);
+    }
+}
+
+.preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    animation: pre_loader 3s ease-out;
+    pointer-events: none;
+    z-index: 999;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@keyframes pre_loader {
+    0% {
+        opacity: 1;
+        background-image: url(../images/bg/preloader.jpg); 
+
+    }
+
+
+    25% {
+        opacity: 1;
+        background-image: url(../images/bg/preloader.jpg); 
+    }
+
+    50% {
+        opacity: 1;
+        background-image: url(../images/bg/preloader.jpg); 
+    }
+
+    100% {
+        opacity: 0;
+        background-image: url(../images/bg/preloader.jpg); 
+    }
+}

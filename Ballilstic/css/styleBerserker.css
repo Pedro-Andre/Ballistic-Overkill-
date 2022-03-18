@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url("../images/bg/furiosoW.jpg");
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/*SIDE-BAR*/
+.side-bar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0px;
+    flex-direction: column;
+    height: 100vh;
+    width: 80px;
+    background: #00000008;
+    backdrop-filter: blur(10px);
+    border-right: 1px solid #00000035;
+    z-index: 98;
+}
+
+.side-bar .socials {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-bar .socials > div {
+    margin-bottom: 32px;
+}
+
+.side-bar .socials div:hover {
+    transform: scale(1.2);
+    border-radius: 20px;
+    transition: all ease-out .2s;
+}
+
+.scroll-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    border-radius: 10px;
+    background: #ffffff95;
+    backdrop-filter: blur(20px);
+    transition: all ease-out .2s;
+    cursor: pointer;
+}
+
+
+.scroll-btn p {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 3.6rem;
+    color: #505050;
+}
+
+.scroll-btn:hover {
+    box-shadow: 10px 0px 20px #00000040;
+}
+
+/*SIDE LIST*/
+ul {
+    position: absolute;
+    list-style: none;
+    margin-top: -515px;
+    background: #ffffff90;  
+    backdrop-filter: blur(20px);  
+    border-radius: 10px;
+    z-index: 999;
+    display: none;
+}
+
+li {
+    padding: 10px 5px;
+}
+
+.mask {
+    max-width: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.mask img {
+    max-width: 100%;
+    display: block;
+}
+
+/*NAVBAR*/
+.nav-bar {
+    position: fixed;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    height: 45px;
+    margin: 32px 32px;
+    background: #ffffff45;
+    backdrop-filter: blur(10px);
+    clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+    z-index: 99;
+}
+
+.nav-bar nav a {
+    text-decoration: none;
+    color: #505050;
+    margin-left: 24px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding: 10px 20px;
+    transition: all ease-out .2s;
+}
+
+.nav-bar nav a:hover {
+    background: #D21539;
+    color: #fff;
+    padding: 10px 20px;
+    clip-path: polygon(20% 0, 100% 0%, 80% 100%, 0% 100%);
+}
+
+/*ABOUT CLASS*/
+.about {
+    position: relative;
+    top: 150px;
+    left: 120px;
+    flex-direction: column;
+    color: #505050;
+}
+
+.name-class {
+    position: relative;
+    font-size: 9.6rem;
+    font-weight: 500;
+}
+
+.name-class::after {
+    content: '';
+    position: absolute;
+    top: 110px;
+    left: 0px;
+    width: 200px;
+    height: 1px;
+    background: #505050;
+    animation: move 3s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+    0% {
+        
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+} 
+.about-class {
+    position: relative;
+    top: 24px;
+    font-size: 3.2rem;
+    font-weight: 200;
+}
+
+/*RIGHT CONTENT*/
+.right-content {
+    position: relative;
+    top: 0px;
+    right: 0;
+}
+
+.bg-name {
+    position: absolute;
+    right: 200px;
+    top: 72px;
+    font-size: 20.8rem;
+    opacity: 15%;
+    transform: rotate(-90deg);
+    letter-spacing: 16px;
+}
+
+.img-class {
+    position: absolute;
+    right: -55px;
+    top: -110px;
+    max-width: 650px;
+    z-index: 3;
+}
+
+.emblem-class {
+    position: absolute;
+    left: calc(100% - 30%);
+    top: -70px;
+    max-width: 400px;
+    z-index: 1;
+}
+
+/*BOTTOM CONTENT*/
+.bottom-content {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+}
+
+.bottom-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    bottom: 0;
+    left: 80px;
+    width: 65vw;
+    height: 120px;
+    background: #00000015;
+    backdrop-filter: blur(15px);
+    clip-path: polygon(90% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
+    z-index: 5;
+}
+
+.main-skill {
+    font-size: 3.2rem;
+    color: #505050;
+}
+
+.skills {
+    font-size: 2.0rem;
+    color: #505050;
+}
+
+.bottom-img {
+    position: relative;
+    left: 80px;
+    z-index: 99;
+    max-width: 110px;
+}
+

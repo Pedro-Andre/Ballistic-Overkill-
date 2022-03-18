@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ballistic Overkill - project</title>
+    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="stylesheet" href="../css/styleTank.css">
+</head>
+
+<body>
+
+    <div class="transition"></div>
+    <!--NAVBARS-->
+    <header>
+        <div class="side-bar">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/logo.png" width="55px">
+                </a>
+            </div>
+
+            <div class="socials">
+                <div class="steam">
+                    <a href="https://store.steampowered.com/app/296300/Ballistic_Overkill/" target="_blank">
+                        <img src="../images/steam.svg" alt="">
+                    </a>
+                </div>
+                <div class="aquiris">
+                    <a href="https://www.aquiris.com.br/" target="_blank">
+                        <img src="../images/aquiris.svg" alt="">
+                    </a>
+                </div>
+                <div class="twitter">
+                    <a href="https://twitter.com/AquirisGS" target="_blank">
+                        <img src="../images/twitter.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="scroll-btn" onclick="listshow()">
+                <ul id="side-list" class="sideList">
+                    <li>
+                        <a href="./berserker.html">
+                            <div class="mask">
+                                <img src="../images/Avatar/avatarFurioso.jpg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./vanguard.html">
+                            <div class="mask">
+                                <img src="../images/Avatar/avatarVanguarda.jpg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./wraith.html">
+                            <div class="mask">
+                                <img src="../images/Avatar/avatarEspectro.jpg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./shadow.html">
+                            <div class="mask">
+                                <img src="../images/Avatar/avatarSombra.jpg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./grenadier.html">
+                            <div class="mask">
+                                <img src="../images/Avatar/avatarGranadeiro.jpg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./tank.html">
+                            <div class="mask">
+                                <img src="../images/Avatar/avatarTank.jpg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./marksman.html">
+                            <div class="mask">
+                                <img src="../images/Avatar/avatarAtirador.jpg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <p>
+                    +
+                </p>
+            </div>
+        </div>
+
+        <div class="nav-bar">
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="https://store.steampowered.com/app/296300/Ballistic_Overkill/" target="_blank">More</a>
+                <a href="https://store.steampowered.com/app/296300/Ballistic_Overkill/" target="_blank">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <!--BODY CONTENT-->
+    <div class="about">
+        <div class="name-class">
+            Tank
+        </div>
+
+        <div class="about-class">
+            Survival specialist
+        </div>
+    </div>
+
+    <div class="right-content">
+        <div class="bg-name">
+            <p> Tank </p>
+        </div>
+
+        <div class="img-class">
+            <img src="../images/PersonagensG/TankG.png" width="100%" alt="">
+        </div>
+
+        <div class="emblem-class">
+            <img src="../images/Emblemas/TankEmblema.svg" width="100%" alt="">
+        </div>
+    </div>
+
+    <div class="bottom-content">
+        <div class="bottom-img">
+            <img src="../images/PersonagesP/TankP.png" width="100%" alt="">
+        </div>
+
+        <div class="bottom-container">
+            <p class="main-skill">
+                Survival Expert
+            </p>
+
+            <p class="skills">
+                • Highest HP <br>
+                • Heals extra HP from packs and over time <br>
+                • Immune to backstabs
+            </p>
+        </div>
+    </div>
+
+    <!--SIDE LIST (SHOW / HIDE)-->
+    <script>
+        function listshow() {
+            let sideNav = document.getElementById("side-list");
+
+            if (sideNav.style.display === "block") {
+                sideNav.style.display = "none";
+            } else {
+                sideNav.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
