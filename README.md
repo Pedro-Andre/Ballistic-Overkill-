@@ -6,6 +6,7 @@ Arquivo no Figma: https://www.figma.com/file/OQdk0KMeUMCMwkzOMhhbzz/Ballistic-Pr
 Link: https://ballisticoverkill-webview.netlify.app/
 ##
 Home: 
-![h](https://user-images.githubusercontent.com/95501061/162645827-ad9a7dff-a609-4300-b2be-48b2e26fca0a.jpg)
+![h](https://user-images.githubusercontent.com/95501061/162645898-f41fd2eb-eff5-430c-bc19-cf74dc79f3f7.jpg)
 ##
-Class view: ![s](https://user-images.githubusercontent.com/95501061/162645834-a6002397-4ea7-4cc0-b64f-5e26fb5f99e8.jpg)
+Class view: 
+![s](https://user-images.githubusercontent.com/95501061/162645907-f73abb00-9b64-4417-9114-d5a8b7da35fa.jpg)
